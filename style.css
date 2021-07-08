@@ -37,8 +37,14 @@ h3 {
   font-family: var(--ff-railway);
 }
 
+.title-large {
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
 p {
   line-height: 1.5rem;
+  padding: 8px 0;
 }
 
 body {
@@ -84,6 +90,7 @@ header {
   opacity: 1;
   text-decoration: underline;
 }
+
 .section-intro {
   /* border: 1px solid red; */
   background: var(--bg-intro);
@@ -92,6 +99,7 @@ header {
   background-position-y: 100%;
   background-size: 100% 25%;
 }
+
 .intro {
   /* border: 1px solid white; */
   max-width: 830px;
@@ -107,9 +115,7 @@ header {
   display: block;
   width: 110%;
 }
-.intro h1 {
-  font-size: 40px;
-}
+
 .intro p {
   font-size: 19px;
   width: 70%;
@@ -147,4 +153,23 @@ header {
 .overview h3 {
   padding: 8px;
   padding-top: 20px;
+}
+
+.section-productive {
+  background: var(--bg-main);
+}
+
+.productive-container {
+  display: flex;
+  align-items: center;
+  /* padding: 40px; */
+}
+
+.productive-img,
+.productive-text {
+  padding: 20px;
+}
+
+.productive-img img {
+  width: 100%;
 }
