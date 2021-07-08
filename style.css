@@ -1,0 +1,126 @@
+:root {
+  --bg-intro: hsl(217, 28%, 15%);
+  --bg-main: hsl(218, 28%, 13%);
+  --bg-mail: hsl(217, 28%, 15%);
+  --bg-testimonials: hsl(219, 30%, 18%);
+  --bg-footer: hsl(216, 53%, 9%);
+
+  --color-cyan: hsl(176, 68%, 64%);
+  --color-blue: hsl(198, 60%, 50%);
+  --color-error: hsl(0, 100%, 63%);
+
+  --ff-railway: "Raleway", sans-serif;
+  --ff-opensans: "Open Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: var(--ff-railway);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--ff-railway);
+}
+
+body {
+  background: var(--bg-intro);
+  font-size: 16px;
+  font-family: var(--ff-opensans);
+  color: white;
+}
+
+.wrap {
+  /* border: 2px dotted lightgreen; */
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+header {
+  /* border: 1px solid goldenrod; */
+  background: var(--bg-intro);
+}
+
+.nav {
+  /* border: 1px dotted blue; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+  font-family: var(--ff-railway);
+}
+.nav .nav-links {
+  display: flex;
+}
+.nav .nav-links a {
+  /* border: 1px dotted white; */
+  display: block;
+  padding-left: 40px;
+  color: white;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+.nav .nav-links a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+.section-intro {
+  /* border: 1px solid red; */
+  background: var(--bg-intro);
+  background-image: url(img/bg-curvy-desktop.svg);
+  background-repeat: no-repeat;
+  background-position-y: 100%;
+  background-size: 100% 25%;
+}
+.intro {
+  /* border: 1px solid white; */
+  max-width: 830px;
+  height: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.intro-img img {
+  display: block;
+  width: 110%;
+}
+.intro h1 {
+  font-size: 40px;
+}
+.intro p {
+  font-size: 19px;
+  width: 70%;
+}
+.btn {
+  border: none;
+  outline: none;
+  padding: 18px 90px;
+  border-radius: 50px;
+  font-size: inherit;
+  color: white;
+  background-image: linear-gradient(to right, var(--color-cyan), var(--color-blue));
+  cursor: pointer;
+}
+
+.section-product {
+  background: var(--bg-main);
+}
