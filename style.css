@@ -37,8 +37,12 @@ h3 {
   font-family: var(--ff-railway);
 }
 
+p {
+  line-height: 1.5rem;
+}
+
 body {
-  background: var(--bg-intro);
+  /* background: var(--bg-intro); */
   font-size: 16px;
   font-family: var(--ff-opensans);
   color: white;
@@ -61,7 +65,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 60px;
+  padding-top: 60px;
   font-family: var(--ff-railway);
 }
 .nav .nav-links {
@@ -121,6 +125,26 @@ header {
   cursor: pointer;
 }
 
-.section-product {
+.section-overview {
+  /* border: 1px solid yellow; */
   background: var(--bg-main);
+}
+
+.overview-container {
+  padding-top: 80px;
+}
+
+.overview-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.overview {
+  width: 400px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+.overview h3 {
+  padding: 8px;
+  padding-top: 20px;
 }
