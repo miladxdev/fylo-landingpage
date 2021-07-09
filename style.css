@@ -48,7 +48,7 @@ p {
 }
 
 body {
-  /* background: var(--bg-intro); */
+  background: var(--bg-main);
   font-size: 16px;
   font-family: var(--ff-opensans);
   color: white;
@@ -111,29 +111,26 @@ header {
   align-items: center;
   justify-content: space-around;
 }
-.intro-img img {
+.image-container img {
   display: block;
-  width: 110%;
+  width: 100%;
 }
 
 .intro p {
   font-size: 19px;
   width: 70%;
 }
+
 .btn {
   border: none;
   outline: none;
-  padding: 18px 90px;
+  padding: 18px 24px;
+
   border-radius: 50px;
   font-size: inherit;
   color: white;
   background-image: linear-gradient(to right, var(--color-cyan), var(--color-blue));
   cursor: pointer;
-}
-
-.section-overview {
-  /* border: 1px solid yellow; */
-  background: var(--bg-main);
 }
 
 .overview-container {
@@ -146,17 +143,16 @@ header {
 }
 
 .overview {
+  /* border: 1px solid red; */
   width: 400px;
+  margin: 0 20px;
   text-align: center;
   margin-bottom: 100px;
 }
+
 .overview h3 {
   padding: 8px;
   padding-top: 20px;
-}
-
-.section-productive {
-  background: var(--bg-main);
 }
 
 .productive-container {
@@ -172,4 +168,79 @@ header {
 
 .productive-img img {
   width: 100%;
+}
+
+.card-container {
+  /* border: 1px solid white; */
+  margin: 150px 0 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 350px;
+  padding: 14px 20px;
+  margin: 10px;
+  border-radius: 4px;
+  background: var(--bg-testimonials);
+}
+
+.card-text {
+  line-height: 1.5rem;
+  padding-top: 20px;
+}
+
+.card-profile {
+  /* border: 1px solid hotpink; */
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.card-profile img {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+.card-user {
+  padding-left: 20px;
+}
+.card-profile span {
+  display: block;
+  padding: 2px;
+  font-size: 14px;
+}
+.signup-container {
+  position: relative;
+}
+.signup {
+  position: relative;
+  top: 130px;
+  max-width: 800px;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+  background: var(--bg-mail);
+}
+
+.email-container {
+  display: flex;
+  margin-top: 20px;
+  /* align-items: center; */
+}
+
+.input-email {
+  flex: 60%;
+  margin-right: 20px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  padding-left: 30px;
+}
+
+footer {
+  padding: 200px;
+  background: var(--bg-footer);
 }
