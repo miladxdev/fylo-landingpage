@@ -170,6 +170,13 @@ header {
   width: 100%;
 }
 
+.productive-link {
+  padding-bottom: 4px;
+  border-bottom: 2px solid var(--color-cyan);
+}
+.productive-link a {
+  color: var(--color-cyan);
+}
 .card-container {
   /* border: 1px solid white; */
   margin: 150px 0 50px 0;
@@ -241,6 +248,37 @@ header {
 }
 
 footer {
-  padding: 200px;
+  padding-top: 200px;
   background: var(--bg-footer);
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 80px;
+}
+
+.footer-col {
+  padding: 10px;
+  flex: 1;
+  /* border: 1px dotted blue; */
+}
+.footer-item {
+  margin-bottom: 8px;
+}
+.footer-icon {
+  padding-right: 8px;
+}
+.footer-social-container {
+  display: flex;
+  justify-content: space-around;
+}
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50px;
 }
